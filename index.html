@@ -15,6 +15,7 @@
                 <li><a href="#projeto">Projetos</a></li>
                 <li><a href="#contato">Contatos</a></li>
                 <li><a href="https://google.com/" target="_blank">Google</a></li>
+                <li><a href="#candidatura">Candidatar-se</a></li>
             </ul>
         </nav>
     </header>
@@ -100,7 +101,59 @@
             <label for="mensagem">Mensagem</label> <br>
             <textarea id="mensagem" name="mensagem" cols="20" rows="5" required></textarea> <br>
 
-            <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button> <br>
+
+            <input type="checkbox" id="checkbox" name="checkbox" value="1">
+            <label for="checkbox">Deseja receber minha newsletter? Fique por dentro!</label>
+        </form>
+    </section>
+    <section id="candidatura">
+        <h2>Candidatar-se</h2>
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome " name="nome" required> <br>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade"
+            name="idade" required> <br>
+
+            <label for="materia">Matéria que vai lecionar:
+            </label>
+            <select name="materia" id="materia">
+                <option value="portugues">Português</option>
+                <option value="matematica">Matemática</option>
+                <option value="biologia">Biologia</option>
+                <option value="fisica">Física</option>
+                <option value="geografia">Geografia</option>
+                <option value="historia">História</option>
+                <option value="artes">Artes</option>
+            </select>
+
+            <h3>Turnos disponíveis:</h3>
+            <input type="checkbox" id="manha" name="turno" value="manha">
+            <label for="turno">Manhã</label> <br>
+            <input type="checkbox" id="tarde" name="turno" value="tarde">
+            <label for="turno">Tarde</label> <br>
+            <input type="checkbox" id="noite" name="turno" value="noite">
+            <label for="turno">Noite</label> <br>
+
+            <h3>Escolaridade:</h3>
+            <select name="escolaridade" id="escolaridade">
+                <option value="tecnico">Técnico Completo</option>
+                <option value="superior">Superior Completo</option>
+                <option value="cmestrado">Cursando Mestrado</option>
+                <option value="mestrado">Mestrado Completo</option>
+                <option value="cdoutorado">Cursando Doutorado</option>
+                <option value="doutorado">Doutorado Completo</option>
+                <option value="cphd">Cursando PhD</option>
+                <option value="phd">PhD Completo</option>
+            </select> <br>
+
+            <h3>Descresva-se brevemente:</h3>
+            <textarea name="descricao" maxlength="200" id="descricao" cols="20" rows="5"></textarea>
         </form>
     </section>
     <footer>
